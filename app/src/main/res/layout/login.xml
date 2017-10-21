@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/check_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorMain"
+        android:fitsSystemWindows="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="手机号码验证"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/login_1"
+            android:textSize="14sp"
+            android:lineSpacingMultiplier="1.2"/>
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/for_login_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/ic_account_box_black_36dp"
+            android:layout_below="@id/login_title"
+            android:layout_marginTop="50dp">
+            <EditText
+                android:id="@+id/login_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="请输入您的姓名"
+                android:textSize="18sp" />
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/for_login_num"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/ic_phone_black_48dp"
+            android:layout_below="@id/for_login_name">
+            <EditText
+                android:id="@+id/login_num"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="请输入手机号"
+                android:textSize="18sp"
+                android:inputType="number"/>
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/for_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/for_login_num"
+            android:layout_marginRight="100dp"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/ic_lock_outline_black_36dp">
+            <EditText
+                android:id="@+id/login_pwd"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:hint="请输入验证码"
+                android:textSize="18sp"
+                android:inputType="number"/>
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <Button
+            android:id="@+id/get_ratify"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="获取验证码"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/for_login_pwd"
+            android:background="@color/colorMain"/>
+
+        <Button
+            android:id="@+id/login_submit"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="登 录"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/for_login_pwd"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorMain"/>
+        <TextView
+            android:id="@+id/login_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/login_submit"
+            android:layout_marginTop="10dp"
+            android:text="注册"
+            android:textSize="12sp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+</RelativeLayout>

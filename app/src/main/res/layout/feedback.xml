@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorMain"
+        android:fitsSystemWindows="true">
+        <Button
+            android:id="@+id/back_feedback"
+            android:background="@drawable/icon_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:text=""/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="反馈      "
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/feedback_inf"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="86dp"
+        android:hint="请输入反馈信息"
+        android:textSize="16sp"
+        android:minLines="8"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="@drawable/edit_bg"
+        android:gravity="left|top"/>
+    <!--  240   -->
+    <!--   -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="340dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/commit_feedback"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:text="提交"
+            android:textColor="@color/colorMain"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/shape2"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>
